@@ -1,7 +1,12 @@
 import React from "react";
+import Login from "../components/Auth/Login";
+import { useAuth } from "../contexts/AuthContexts";
+
+import HomePage from "./HomePage";
 
 const AuthPage = () => {
-	return <div>AuthPage</div>;
+	const { user } = useAuth();
+	return <>{user ? <HomePage /> : <Login />}</>;
 };
 
 export default AuthPage;
