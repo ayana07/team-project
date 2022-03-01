@@ -1,0 +1,16 @@
+#navbar_color {
+	background-color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+#logo {
+	width: 20%;
+	height: 30%;
+}
+
+.MuiBox-root a {
+	color: #4cd137;
+}

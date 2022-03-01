@@ -13,6 +13,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
+import "./NavBar.css";
 
 const pages = [
 	{
@@ -57,7 +59,7 @@ const NavBar = () => {
 		setAnchorElUser(null);
 	};
 	return (
-		<AppBar position="static">
+		<AppBar id="navbar_color" position="static">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<Link to="/">
@@ -67,7 +69,7 @@ const NavBar = () => {
 							component="div"
 							sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
 						>
-							LOGO
+							<img src={logo} alt="" />
 						</Typography>
 					</Link>
 
@@ -116,7 +118,7 @@ const NavBar = () => {
 							component="div"
 							sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
 						>
-							LOGO
+							<img src={logo} alt="#" />
 						</Typography>
 					</Link>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
