@@ -9,9 +9,15 @@ import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
-import Testmonial from "./pages/Testmonial";
+import TestimonialPage from "./pages/TestimonialPage";
+import { ADMIN } from "./helpers/consts";
+// import { useAuth } from "./contexts/AuthContexts";
+import { useAuth } from "./contexts/AuthContexts";
+
+
 
 const MainRoutes = () => {
+	const {user} = useAuth();
 	const PUBLIC_ROUTES = [
 		{
 			link: "/",
@@ -49,8 +55,8 @@ const MainRoutes = () => {
 			id: 7,
 		},
 		{
-			link: "/testmonial",
-			element: <Testmonial />,
+			link: "/testimonial",
+			element: <TestimonialPage />,
 			id: 8,
 		},
 	];
@@ -75,7 +81,7 @@ const MainRoutes = () => {
 					<Route path={item.link} element={item.element} />
 				))}
 
-				{/* {user
+				{user
 					? PRIVATE_ROUTES.map((item) => (
 							<Route
 								path={item.link}
@@ -88,7 +94,7 @@ const MainRoutes = () => {
 								}
 							/>
 					  ))
-					: null} */}
+					: null}
 			</Routes>
 		</>
 	);

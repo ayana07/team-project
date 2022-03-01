@@ -5,7 +5,6 @@ const AboutUsPage = () => {
 	return (
 		<div>
 			<AboutUs />
-			AboutUsPage
 		</div>
 	);
 };
