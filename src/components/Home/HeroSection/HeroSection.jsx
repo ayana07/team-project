@@ -13,12 +13,15 @@ const HeroSection = () => {
 							display: "flex",
 							alignItems: "center",
 							justifyContent: "center",
+							flexWrap: "wrap",
 						}}
 					>
 						<div className="hero-img">
 							<img src={hero} alt="" />
 						</div>
-						<h1 className="hero-section-bg-title">NIKE</h1>
+						<h1 className="hero-section-bg-title">
+							NIKE <br /> JUST <br /> DO IT
+						</h1>
 					</div>
 				</Container>
 			</div>
