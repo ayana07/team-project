@@ -1,5 +1,4 @@
 import React from "react";
-
 import runman from "../assets/images/runman.png";
 import team from "../assets/images/team.png";
 import community from "../assets/images/community.png";

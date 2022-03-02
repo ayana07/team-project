@@ -15,6 +15,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContexts";
 
+import logo from "../assets/logo.svg";
+
 import { ADMIN } from "../../helpers/consts";
 
 import "./NavBar.css";
@@ -35,13 +37,11 @@ const pages = [
 		link: "/products",
 		id: 4,
 	},
-
 	{
 		name: "CONTACTS",
 		link: "/contacts",
 		id: 7,
 	},
-	{ name: "LOGIN", link: "/auth", id: 3 },
 ];
 const NavBar = () => {
 	// const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -71,80 +71,19 @@ const NavBar = () => {
 		setAnchorElUser(null);
 	};
 	return (
-		<AppBar position="static">
+		<AppBar id="navbar_color" position="static">
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
-					{/*<Link to="/">
+					<Link to="/">
 						<Typography
 							variant="h6"
 							noWrap
 							component="div"
 							sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-						></Typography>
-					</Link> */}
-
-					{/* <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-						<IconButton
-							size="large"
-							aria-label="account of current user"
-							aria-controls="menu-appbar"
-							aria-haspopup="true"
-							onClick={handleOpenNavMenu}
-							color="inherit"
 						>
-							<MenuIcon />
-						</IconButton> */}
-					{/* <Menu
-							id="menu-appbar"
-							anchorEl={anchorElNav}
-							anchorOrigin={{
-								vertical: "bottom",
-								horizontal: "left",
-							}}
-							keepMounted
-							transformOrigin={{
-								vertical: "top",
-								horizontal: "left",
-							}}
-							open={Boolean(anchorElNav)}
-							onClose={handleCloseNavMenu}
-							sx={{
-								display: { xs: "block", md: "none" },
-							}}
-						>
-							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Link to={page.link}>
-										<Typography textAlign="center">{page.name}</Typography>
-									</Link>
-								</MenuItem>
-							))}
-						</Menu>
-					</Box> */}
-					{/* <Link to="/">
-						<Typography
-							variant="h6"
-							noWrap
-							component="div"
-							sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-						>
-							LOGO
-						</Typography> 
-					</Link>*/}
-					{/* <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-						{pages.map((page) => (
-							<Link to={page.link}>
-								<Button
-									key={page}
-									onClick={handleCloseNavMenu}
-									sx={{ my: 2, color: "white", display: "block" }}
-								>
-									{page.name}
-								</Button>
-							</Link>
-						))}
-					</Box> */}
-
+							<img src={logo} alt="" />{" "}
+						</Typography>
+					</Link>
 					<Box sx={{ flexGrow: 0 }}>
 						<Menu
 							sx={{ mt: "45px" }}
@@ -204,10 +143,11 @@ const NavBar = () => {
 									onClick={handleCloseNavMenu}
 									sx={{
 										my: 2,
-										color: "#ff9100",
+										color: "#4cd137",
 										display: "block",
-										fontSize: 12,
-										fontFamily: "Monospace",
+										fontSize: 14,
+										fontFamily: "Open Sans",
+										fontWeight: 500,
 									}}
 								>
 									{page.name}
@@ -221,10 +161,10 @@ const NavBar = () => {
 								<Button
 									sx={{
 										my: 2,
-										color: "#ff9100",
+										color: "#4cd137",
 										display: "block",
-										fontSize: 12,
-										fontFamily: "Monospace",
+										fontSize: 14,
+										fontFamily: "Open Sans",
 									}}
 								>
 									ADMIN PANEL
@@ -232,7 +172,7 @@ const NavBar = () => {
 							</Link>
 						) : (
 							<Link to="/cart">
-								<Button sx={{ my: 2, color: "white" }}>
+								<Button sx={{ my: 2, color: "#4cd137" }}>
 									<Badge
 										badgeContent={cart?.products ? cart.products.length : 0}
 										color="secondary"
@@ -250,9 +190,12 @@ const NavBar = () => {
 						{email ? (
 							<Button
 								id="button"
-								variant="outlined"
-								color="error"
-								sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+								sx={{
+									my: 2,
+									color: "#4cd137",
+									display: "block",
+									fontFamily: "Open Sans",
+								}}
 								onClick={handleLogout}
 							>
 								Logout
@@ -263,9 +206,12 @@ const NavBar = () => {
 							<Link to="/auth">
 								<Button
 									id="button"
-									variant="outlined"
-									color="error"
-									sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+									sx={{
+										my: 2,
+										color: "#4cd137",
+										display: "block",
+										fontFamily: "Open Sans",
+									}}
 									onClick={handleLogout}
 								>
 									Login

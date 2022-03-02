@@ -1,0 +1,60 @@
+.about-title {
+	color: #4cd137;
+	font-size: 2em;
+	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+}
+
+.about-subtitle {
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 300;
+	color: #4cd137;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.content-item-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.content-item-icon span {
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 500;
+	color: #4cd137;
+	font-family: "Open Sans", sans-serif;
+}
+
+#grid-container {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-rows: 210px 177px;
+	grid-template-columns: 430px 245px;
+	justify-content: center;
+}
+
+.item1 {
+	background: url("https://avatars.mds.yandex.net/i?id=cbcbb91e58b6d6e808bf8777da628499-5359702-images-thumbs&n=13");
+	border: 2px solid #4cd137;
+}
+
+.item2 {
+	background: url("https://avatars.mds.yandex.net/i?id=ef2fa9ccdf3570abccacdb0b5721daa5-5237668-images-thumbs&n=13");
+	border: 2px solid #4cd137;
+}
+
+.item3 {
+	background: url("https://avatars.mds.yandex.net/i?id=a81fb57cef318dddefa1f41d68993ee6-5313761-images-thumbs&n=13");
+	border: 2px solid #4cd137;
+}
+
+.item4 {
+	background: url("https://avatars.mds.yandex.net/i?id=66c34f707c3c62ee8ccc0aad9d473753-5850566-images-thumbs&n=13");
+	border: 2px solid #4cd137;
+}

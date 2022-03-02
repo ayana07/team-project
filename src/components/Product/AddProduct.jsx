@@ -1,8 +1,8 @@
 import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useProducts } from "../../contexts/ProductContext";
 import { useProducts } from "../../contexts/PoductContext";
+import "./ProductStyles/AddProduct.css";
 
 const AddProduct = () => {
 	const { addProduct } = useProducts();
@@ -36,21 +36,16 @@ const AddProduct = () => {
 	};
 
 	return (
-		<Box sx={{ bgcolor: "#", height: "100vh", padding: "20vh auto" }}>
-			<center variant="h6" gutterBottom>
-				<h2 sx={{ fontFamily: "Roboto" }}>WELCOME, ADMIN!</h2>
-				<h3 sx={{ color: "#52b202" }}>Let's add new collection!</h3>
-			</center>
-
+		<Box sx={{ py: 10 }}>
 			<Grid
 				item
 				xs={12}
 				md={6}
 				sx={{
-					margin: "10vh auto",
+					margin: "0 auto",
 					boxShadow: 3,
 					borderRadius: 3,
-					bgcolor: "#65C18C",
+					color: "white",
 				}}
 			>
 				<form>
@@ -61,6 +56,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="name"
 						onChange={handleInp}
+						sx={{ my: 2, color: "white" }}
 					/>
 					<TextField
 						fullWidth
@@ -69,6 +65,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="description"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>{" "}
 					<TextField
 						fullWidth
@@ -77,6 +74,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="price"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>{" "}
 					<TextField
 						fullWidth
@@ -85,6 +83,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="picture"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>
 					<TextField
 						fullWidth
@@ -93,17 +92,17 @@ const AddProduct = () => {
 						variant="outlined"
 						name="type"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>
-					<Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
+					<Stack direction="row" spacing={2}>
 						<Button
 							id="button"
 							sx={{
-								bgcolor: "#357C3C",
-								borderColor: "error.main",
-								fontFamily: "Roboto",
+								my: 2,
+								borderColor: "#4cd137",
+								fontFamily: "Monospace",
 							}}
 							variant="outlined"
-							color="secondary"
 							size="large"
 							fullWidth
 							onClick={() => {

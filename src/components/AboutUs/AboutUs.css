@@ -65,8 +65,8 @@ about {
 
 .container-about {
 	align-items: center;
-
 	color: white;
+	padding-top: 150px;
 }
 
 .container-about h2 {
@@ -78,7 +78,6 @@ about {
 
 .container-about h3 {
 	font-size: 52px;
-	margin-top: 100px;
 	color: #4cd137;
 }
 .mission-about {
@@ -200,7 +199,11 @@ about {
 	.business h3 {
 		font-size: 16px;
 	}
-	.mission-about p {
+	.mission-about p,
+	.innovation p,
+	.team p,
+	.social p,
+	.business p {
 		font-size: 22px;
 	}
 }
@@ -216,7 +219,11 @@ about {
 	.business h3 {
 		font-size: 10px;
 	}
-	.mission-about p {
+	.mission-about p,
+	.innovation p,
+	.team p,
+	.social p,
+	.business p {
 		font-size: 16px;
 	}
 }

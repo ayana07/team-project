@@ -1,10 +1,9 @@
 import { Grid, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { useProducts } from "../../contexts/ProductContext";
+import { useProducts } from "../../contexts/PoductContext";
 import MediaCard from "../Product/ProductCard";
 import SideBar from "../SideBar/SideBar";
-import "./styles/ProductList.css";
 
 const ProductList = ({ products }) => {
 	const { getProducts } = useProducts();
@@ -42,7 +41,6 @@ const ProductList = ({ products }) => {
 			<div className="side-bar">
 				<SideBar />
 			</div>
-
 			<TextField
 				className="text-field"
 				color="warning"

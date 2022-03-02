@@ -33,8 +33,8 @@ const Contacts = () => {
 		<Grid maxWidth="lg" sx={{ margin: "0 auto" }}>
 			{open ? (
 				<center>
-					<Card style={style}>
-						<CardContent>
+					<Card style={style} sx={{ margin: "220px auto" }}>
+						<CardContent sx={{ backgroundColor: "black" }}>
 							<form>
 								<Grid container spacing={1}>
 									<Grid xs={12} sm={6} item>

@@ -5,22 +5,18 @@ import ProductContextProvider from "./contexts/PoductContext";
 import MainRoutes from "./MainRoutes";
 import Footer from "./components/Footer/Footer";
 
-
-
 function App() {
 	return (
 		<>
-		
 			<BrowserRouter>
-			<AuthContextProvider>
-				<ProductContextProvider>
-				<NavBar />
-				<MainRoutes />
-				<Footer/>
-				</ProductContextProvider>
-			</AuthContextProvider>	
+				<AuthContextProvider>
+					<ProductContextProvider>
+						<NavBar />
+						<MainRoutes />
+						<Footer />
+					</ProductContextProvider>
+				</AuthContextProvider>
 			</BrowserRouter>
-			
 		</>
 	);
 }

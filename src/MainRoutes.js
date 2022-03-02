@@ -4,20 +4,15 @@ import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import AuthPage from "./pages/AuthPage";
 import ProductsPage from "./pages/ProductsPage";
-import ProductDetailsPage from "./pages/ProductDetailsPage";
 import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
-
 import { ADMIN } from "./helpers/consts";
-// import { useAuth } from "./contexts/AuthContexts";
 import { useAuth } from "./contexts/AuthContexts";
 
-
-
 const MainRoutes = () => {
-	const {user} = useAuth();
+	const { user } = useAuth();
 	const PUBLIC_ROUTES = [
 		{
 			link: "/",
@@ -39,11 +34,7 @@ const MainRoutes = () => {
 			element: <ProductsPage />,
 			id: 4,
 		},
-		{
-			link: "/products/:id",
-			element: <ProductDetailsPage />,
-			id: 5,
-		},
+		
 		{
 			link: "/cart",
 			element: <CartPage />,
@@ -54,8 +45,6 @@ const MainRoutes = () => {
 			element: <ContactUsPage />,
 			id: 7,
 		},
-		
-		
 	];
 
 	const PRIVATE_ROUTES = [
