@@ -1,15 +1,25 @@
 import { Container } from "@mui/material";
 import React from "react";
-import Shoes from "../../assets/image1.png";
 import "./HeroSection.css";
+import hero from "../../assets/images/heroImage.png";
 
 const HeroSection = () => {
 	return (
 		<>
 			<div className="hero-section-bg">
-				<Container fixed sx={{ display: "flex" }}>
-					{/* <img className="img" src={Shoes} alt="" /> */}
-					<h1 className="hero-section-bg-title">NIKE</h1>
+				<Container fixed>
+					<div
+						style={{
+							display: "flex",
+							alignItems: "center",
+							justifyContent: "center",
+						}}
+					>
+						<div className="hero-img">
+							<img src={hero} alt="" />
+						</div>
+						<h1 className="hero-section-bg-title">NIKE</h1>
+					</div>
 				</Container>
 			</div>
 		</>

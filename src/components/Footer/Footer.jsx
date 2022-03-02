@@ -1,7 +1,7 @@
 import { Container } from "@mui/material";
 import React from "react";
 import "./Footer.css";
-import logo from "../assets/logo.svg";
+import logo from "../assets/footer-logo.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";

@@ -9,9 +9,11 @@ import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
-import Testmonial from "./pages/Testmonial";
+import { ADMIN } from "./helpers/consts";
+import { useAuth } from "./contexts/AuthContexts";
 
 const MainRoutes = () => {
+	const { user } = useAuth();
 	const PUBLIC_ROUTES = [
 		{
 			link: "/",
@@ -48,11 +50,6 @@ const MainRoutes = () => {
 			element: <ContactUsPage />,
 			id: 7,
 		},
-		{
-			link: "/testmonial",
-			element: <Testmonial />,
-			id: 8,
-		},
 	];
 
 	const PRIVATE_ROUTES = [
@@ -75,7 +72,7 @@ const MainRoutes = () => {
 					<Route path={item.link} element={item.element} />
 				))}
 
-				{/* {user
+				{user
 					? PRIVATE_ROUTES.map((item) => (
 							<Route
 								path={item.link}
@@ -88,7 +85,7 @@ const MainRoutes = () => {
 								}
 							/>
 					  ))
-					: null} */}
+					: null}
 			</Routes>
 		</>
 	);
