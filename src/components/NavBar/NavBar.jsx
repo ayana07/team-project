@@ -35,11 +35,7 @@ const pages = [
 		link: "/products",
 		id: 4,
 	},
-	{
-		name: "TESTIMONIAL",
-		link: "/testimonial",
-		id: 8,
-	},
+
 	{
 		name: "CONTACTS",
 		link: "/contacts",

@@ -9,7 +9,7 @@ import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
-import TestimonialPage from "./pages/TestimonialPage";
+
 import { ADMIN } from "./helpers/consts";
 // import { useAuth } from "./contexts/AuthContexts";
 import { useAuth } from "./contexts/AuthContexts";
@@ -54,11 +54,8 @@ const MainRoutes = () => {
 			element: <ContactUsPage />,
 			id: 7,
 		},
-		{
-			link: "/testimonial",
-			element: <TestimonialPage />,
-			id: 8,
-		},
+		
+		
 	];
 
 	const PRIVATE_ROUTES = [

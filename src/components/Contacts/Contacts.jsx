@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import "./Contacts.css";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 
 const style = {
@@ -43,7 +43,7 @@ const Contacts = () => {
 											placeholder="Enter first name"
 											variant="outlined"
 											fullWidth
-											color="warning"
+											color="primary"
 										/>
 									</Grid>
 
@@ -54,7 +54,7 @@ const Contacts = () => {
 											variant="outlined"
 											fullWidth
 											required
-											color="warning"
+											color="primary"
 										/>
 									</Grid>
 
@@ -66,7 +66,7 @@ const Contacts = () => {
 											variant="outlined"
 											fullWidth
 											required
-											color="warning"
+											color="primary"
 										/>
 									</Grid>
 
@@ -78,7 +78,7 @@ const Contacts = () => {
 											variant="outlined"
 											fullWidth
 											required
-											color="warning"
+											color="primary"
 										/>
 									</Grid>
 
@@ -91,16 +91,15 @@ const Contacts = () => {
 											required
 											multiline
 											rows={4}
-											color="warning"
+											color="primary"
 										/>
 									</Grid>
 
 									<Grid xs={12} item>
 										<Button
 											variant="contained"
-											color="primary"
 											fullWidth
-											color="warning"
+											color="success"
 											onClick={() => setOpen(false)}
 										>
 											Submit
@@ -140,8 +139,12 @@ const Contacts = () => {
 									gutterBottom
 									maxWidth="sm"
 								>
-									Our trip designers are at your disposal for building your
-									dream! Feel free to contact us.
+									United States For questions and assistance related to
+									corporate matters (sponsorship/donations, idea/invention
+									submissions, general feedback for Nike) or for help with
+									product you purchased from an authorized Nike retail partner,
+									please contact us at 1-800-344-6453 (7 a.m. - 4 p.m. PT,
+									Monday through Friday).
 								</Typography>
 							</Grid>
 
@@ -153,10 +156,7 @@ const Contacts = () => {
 									color="text.secondary"
 									gutterBottom
 									maxWidth="sm"
-								>
-									Nomad's Land - ecotourism development company Postal address
-									Nezhinsky lane 27 Bishkek Kyrgyzstan
-								</Typography>
+								></Typography>
 							</Grid>
 
 							<Grid lg={12} sx={{ marginTop: "10vh" }}>
@@ -174,14 +174,14 @@ const Contacts = () => {
 								>
 									<LocalPhoneOutlinedIcon
 										className="grid-icon"
-										color="warning"
+										color="success"
 										sx={{ marginRight: "1vw", transition: "all 0.5s ease" }}
 									/>
-									+996 771 53 96 10
+									1-503-671-6455
 								</Link>
 
 								<Link
-									href="https://google.com"
+									href="https://instagram.com/nike?utm_medium=copy_link"
 									sx={{
 										display: "flex",
 										alignItems: "center",
@@ -193,35 +193,15 @@ const Contacts = () => {
 									gutterBottom
 								>
 									<InstagramIcon
-										color="warning"
+										color="success"
 										sx={{ marginRight: "1vw", transition: "all 0.5s ease" }}
 										className="grid-icon"
 									/>
-									Kadyrov___02
+									Nike
 								</Link>
 
 								<Link
-									href="https://google.com"
-									sx={{
-										display: "flex",
-										alignItems: "center",
-										fontWeight: 900,
-										fontSize: "22px",
-										textDecoration: "none",
-									}}
-									color="text.secondary"
-									gutterBottom
-								>
-									<GitHubIcon
-										className="grid-icon"
-										color="warning"
-										sx={{ marginRight: "1vw", transition: "all 0.5s ease" }}
-									/>
-									ltemirlan2003@gmail.com
-								</Link>
-
-								<Link
-									href="https://google.com"
+									href="https://www.facebook.com/nike/"
 									sx={{
 										display: "flex",
 										alignItems: "center",
@@ -234,10 +214,10 @@ const Contacts = () => {
 								>
 									<FacebookOutlinedIcon
 										className="grid-icon"
-										color="warning"
+										color="success"
 										sx={{ marginRight: "1vw", transition: "all 0.5s ease" }}
 									/>
-									Tima__23
+									Nike
 								</Link>
 							</Grid>
 						</Grid>
@@ -257,11 +237,11 @@ const Contacts = () => {
 					<Button
 						className="grid-button"
 						variant="contained"
-						color="warning"
+						color="success"
 						onClick={() => setOpen(true)}
 						sx={{ marginTop: "-1vh", marginBottom: "6vh" }}
 					>
-						Get in Touch with us
+						Get in Touch
 					</Button>
 				</center>
 			)}
@@ -271,7 +251,7 @@ const Contacts = () => {
 
 const itemData = [
 	{
-		img: "https://www.pngall.com/wp-content/uploads/3/Art-PNG-Image.png",
+		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEF0AswVSmnoI-7Fu9BVqwgzQCBlrcsVtZFsPBwhZKVzP0dK81mCnQsTV0UkSSaHPiZI&usqp=CAU",
 	},
 ];
 

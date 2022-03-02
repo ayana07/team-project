@@ -36,10 +36,10 @@ const AddProduct = () => {
 	};
 
 	return (
-		<Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
+		<Box sx={{ bgcolor: "#", height: "100vh", padding: "20vh auto" }}>
 			<center variant="h6" gutterBottom>
-				<h2 sx={{ fontFamily: "Monospace" }}>WELCOME, ADMIN!</h2>
-				<h3>Let's add a new tour!</h3>
+				<h2 sx={{ fontFamily: "Roboto" }}>WELCOME, ADMIN!</h2>
+				<h3 sx={{ color: "#52b202" }}>Let's add new collection!</h3>
 			</center>
 
 			<Grid
@@ -50,7 +50,7 @@ const AddProduct = () => {
 					margin: "10vh auto",
 					boxShadow: 3,
 					borderRadius: 3,
-					bgcolor: "#ffcc80",
+					bgcolor: "#65C18C",
 				}}
 			>
 				<form>
@@ -98,12 +98,12 @@ const AddProduct = () => {
 						<Button
 							id="button"
 							sx={{
-								bgcolor: "#263238",
+								bgcolor: "#357C3C",
 								borderColor: "error.main",
-								fontFamily: "Monospace",
+								fontFamily: "Roboto",
 							}}
 							variant="outlined"
-							color="error"
+							color="secondary"
 							size="large"
 							fullWidth
 							onClick={() => {
