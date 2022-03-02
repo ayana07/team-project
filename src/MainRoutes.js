@@ -4,7 +4,6 @@ import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import AuthPage from "./pages/AuthPage";
 import ProductsPage from "./pages/ProductsPage";
-import ProductDetailsPage from "./pages/ProductDetailsPage";
 import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import AdminPage from "./pages/AdminPage";
@@ -34,11 +33,6 @@ const MainRoutes = () => {
 			link: "/products",
 			element: <ProductsPage />,
 			id: 4,
-		},
-		{
-			link: "/products/:id",
-			element: <ProductDetailsPage />,
-			id: 5,
 		},
 		{
 			link: "/cart",

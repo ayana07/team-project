@@ -1,48 +1,34 @@
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import React from "react";
 import "./SectionTwo.css";
-// import * as React from 'react';
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import nikeluis from "../../assets/nike&lv.jpg";
-
-const bull = (
-	<Box
-		component="span"
-		sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-	>
-		•
-	</Box>
-);
+import air from "../../assets/images/popular1.png";
+import dunk from "../../assets/images/popular2.png";
+import blazer from "../../assets/images/popular3.png";
+import zoom from "../../assets/images/popular4.png";
 
 const SectionTwo = () => {
 	return (
 		<div className="popular-product">
 			<Container fixed>
-				<Grid container spacing={2}>
-					<h3 className="popular-title">Popular Product</h3>
-					<div style={{ display: "flex", marginTop: "15px" }}>
-						<Card sx={{ minWidth: 200, mx: 7 }}>
-							<CardContent>
-								<img className="nice-img" src={nikeluis} alt="" />
-							</CardContent>
-						</Card>
-						<Card sx={{ minWidth: 200, mx: 7 }}>
-							<CardContent>
-								<img className="nice-img" src={nikeluis} alt="" />
-							</CardContent>
-						</Card>
-						<Card sx={{ minWidth: 200, mx: 7 }}>
-							<CardContent>
-								<img className="nice-img" src={nikeluis} alt="" />
-							</CardContent>
-						</Card>
+				<h3 className="popular">Popular product</h3>
+				<div id="grid-cont" style={{ marginTop: "15px" }}>
+					<div className="grid1">
+						<img style={{ width: "100%" }} src={air} alt="" />
+						<p>Air Force</p>
 					</div>
-				</Grid>
+					<div className="grid2">
+						<img style={{ width: "100%" }} src={dunk} alt="" />
+						<p>Nike Dunk</p>
+					</div>
+					<div className="grid3">
+						<img style={{ width: "100%" }} src={blazer} alt="" />
+						<p>Nike Blazer</p>
+					</div>
+					<div className="grid4">
+						<img style={{ width: "100%" }} src={zoom} alt="" />
+						<p>Air Zoom</p>
+					</div>
+				</div>
 			</Container>
 		</div>
 	);
