@@ -5,13 +5,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { useProducts } from "../../contexts/ProductContext";
+import { useProducts } from "../../contexts/PoductContext";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContexts";
 import FavoriteSharpIcon from "@mui/icons-material/FavoriteSharp";
 import ShoppingBasketSharpIcon from "@mui/icons-material/ShoppingBasketSharp";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import "./styles/ProductCard.css";
 
 import { Delete, Edit } from "@mui/icons-material";
 import { ADMIN } from "../../helpers/consts";

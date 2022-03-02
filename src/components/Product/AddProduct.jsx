@@ -1,8 +1,8 @@
 import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useProducts } from "../../contexts/ProductContext";
 import { useProducts } from "../../contexts/PoductContext";
+import "./ProductStyles/AddProduct.css";
 
 const AddProduct = () => {
 	const { addProduct } = useProducts();
@@ -36,21 +36,15 @@ const AddProduct = () => {
 	};
 
 	return (
-		<Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
-			<center variant="h6" gutterBottom>
-				<h2 sx={{ fontFamily: "Monospace" }}>WELCOME, ADMIN!</h2>
-				<h3>Let's add a new tour!</h3>
-			</center>
-
+		<Box sx={{ py: 10 }}>
 			<Grid
 				item
 				xs={12}
 				md={6}
 				sx={{
-					margin: "10vh auto",
+					margin: "0 auto",
 					boxShadow: 3,
 					borderRadius: 3,
-					bgcolor: "#ffcc80",
 				}}
 			>
 				<form>
@@ -61,6 +55,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="name"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>
 					<TextField
 						fullWidth
@@ -69,6 +64,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="description"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>{" "}
 					<TextField
 						fullWidth
@@ -77,6 +73,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="price"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>{" "}
 					<TextField
 						fullWidth
@@ -85,6 +82,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="picture"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>
 					<TextField
 						fullWidth
@@ -93,17 +91,17 @@ const AddProduct = () => {
 						variant="outlined"
 						name="type"
 						onChange={handleInp}
+						sx={{ my: 2 }}
 					/>
-					<Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
+					<Stack direction="row" spacing={2}>
 						<Button
 							id="button"
 							sx={{
-								bgcolor: "#263238",
-								borderColor: "error.main",
+								my: 2,
+								borderColor: "#4cd137",
 								fontFamily: "Monospace",
 							}}
 							variant="outlined"
-							color="error"
 							size="large"
 							fullWidth
 							onClick={() => {

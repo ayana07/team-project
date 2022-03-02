@@ -1,8 +1,7 @@
 import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { useProducts } from "../../contexts/ProductContext";
-import "./styles/AddProduct.css";
+import { useProducts } from "../../contexts/PoductContext";
 
 const EditProduct = () => {
 	const { id } = useParams();
@@ -37,7 +36,7 @@ const EditProduct = () => {
 
 	return (
 		<div>
-			<Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
+			<Box sx={{ py: 10 }}>
 				<center variant="h6" gutterBottom>
 					EDIT PRODUCT
 				</center>
@@ -47,10 +46,9 @@ const EditProduct = () => {
 					xs={12}
 					md={6}
 					sx={{
-						margin: "10vh auto",
+						margin: "0 auto",
 						boxShadow: 3,
 						borderRadius: 3,
-						bgcolor: "#ffcc80",
 					}}
 				>
 					<form>
@@ -62,6 +60,7 @@ const EditProduct = () => {
 							variant="outlined"
 							name="name"
 							onChange={(e) => handleInput(e, product, setProduct)}
+							sx={{ my: 2 }}
 						/>
 						<TextField
 							value={product.description}
@@ -71,33 +70,37 @@ const EditProduct = () => {
 							variant="outlined"
 							name="description"
 							onChange={(e) => handleInput(e, product, setProduct)}
+							sx={{ my: 2 }}
 						/>{" "}
 						<TextField
 							value={product.price}
 							fullWidth
 							id="outlined-basic"
-							label="PRICE"
+							// label="PRICE"
 							variant="outlined"
 							name="price"
 							onChange={(e) => handleInput(e, product, setProduct)}
+							sx={{ my: 2 }}
 						/>{" "}
 						<TextField
 							value={product.picture}
 							fullWidth
 							id="outlined-basic"
-							label="PICTURE"
+							// label="PICTURE"
 							variant="outlined"
 							name="picture"
 							onChange={(e) => handleInput(e, product, setProduct)}
+							sx={{ my: 2 }}
 						/>
 						<TextField
 							value={product.type}
 							fullWidth
 							id="outlined-basic"
-							label="TYPE"
+							// label="TYPE"
 							variant="outlined"
 							name="type"
 							onChange={(e) => handleInput(e, product, setProduct)}
+							sx={{ my: 2 }}
 						/>
 						<Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
 							<Button
