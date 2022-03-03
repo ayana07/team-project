@@ -36,7 +36,7 @@ const EditProduct = () => {
 
 	return (
 		<div>
-			<Box sx={{ py: 10 }}>
+			<Box sx={{ py: 10, backgroundColor: "white" }}>
 				<center variant="h6" gutterBottom>
 					EDIT PRODUCT
 				</center>

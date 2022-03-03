@@ -45,6 +45,7 @@ const AddProduct = () => {
 					margin: "0 auto",
 					boxShadow: 3,
 					borderRadius: 3,
+					color: "white",
 				}}
 			>
 				<form>
@@ -55,7 +56,7 @@ const AddProduct = () => {
 						variant="outlined"
 						name="name"
 						onChange={handleInp}
-						sx={{ my: 2 }}
+						sx={{ my: 2, color: "white" }}
 					/>
 					<TextField
 						fullWidth

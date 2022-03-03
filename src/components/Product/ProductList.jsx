@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useProducts } from "../../contexts/PoductContext";
 import MediaCard from "../Product/ProductCard";
+import SideBar from "../SideBar/SideBar";
+import { useParams } from "react-router-dom";
 
 const ProductList = ({ products }) => {
 	const { getProducts } = useProducts();
@@ -37,6 +39,9 @@ const ProductList = ({ products }) => {
 
 	return (
 		<div style={{ display: "flex", backgroundColor: "#000" }}>
+			<div className="side-bar">
+				<SideBar />
+			</div>
 			<TextField
 				className="text-field"
 				color="warning"

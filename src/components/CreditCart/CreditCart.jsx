@@ -1,5 +1,5 @@
 import { Alert } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import useForm from "../../useForm";
@@ -65,21 +65,17 @@ const CreditCart = () => {
 						isvalid={errors.ccvv}
 					/>
 				</form>
-				<button
-					size={"block"}
-					data-testid="validateButton"
-					id="validateButton"
-					type="submit"
-				>
-					{" "}
-					Validate
-				</button>
-				<Alert
-					id="alertMessage"
-					data-testid="alertMessage"
-					variant={errors.variant}
-					show={errors.show}
-				></Alert>
+				<div className="btn-credit">
+					<button
+						size={"block"}
+						data-testid="validateButton"
+						id="validateButton"
+						type="submit"
+					>
+						{" "}
+						Validate
+					</button>
+				</div>
 			</div>
 		</>
 	);

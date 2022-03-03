@@ -5,6 +5,7 @@ import ProductList from "../components/Product/ProductList";
 import { useProducts } from "../contexts/PoductContext";
 import ArrowCircleRightSharpIcon from "@mui/icons-material/ArrowCircleRightSharp";
 import ArrowCircleLeftSharpIcon from "@mui/icons-material/ArrowCircleLeftSharp";
+import "./ProductsPage.css";
 
 const ProductsPage = () => {
 	const { products, getProducts } = useProducts();
@@ -29,11 +30,11 @@ const ProductsPage = () => {
 		getProducts();
 	}, [location.search]);
 	return (
-		<div>
+		<div style={{ backgroundColor: "black" }}>
 			<ProductList products={paginateProducts} />
 			<ReactPaginate
-				previousLabel={<ArrowCircleLeftSharpIcon />}
-				nextLabel={<ArrowCircleRightSharpIcon />}
+				previousLabel={<ArrowCircleLeftSharpIcon sx={{ color: "white" }} />}
+				nextLabel={<ArrowCircleRightSharpIcon sx={{ color: "white" }} />}
 				onPageChange={changePage}
 				pageRangeDisplayed={5}
 				pageCount={pageCount}

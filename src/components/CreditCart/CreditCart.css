@@ -6,3 +6,12 @@
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	padding: 10px;
 }
+
+#PaymentForm {
+	padding: 15px;
+	height: auto;
+}
+
+#validateButton {
+	margin: 0 auto;
+}

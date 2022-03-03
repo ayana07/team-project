@@ -15,7 +15,11 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { Delete, Edit } from "@mui/icons-material";
 import { ADMIN } from "../../helpers/consts";
 import { IconButton } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+import "../Product/ProductStyles/ProductCard.css";
+import { height } from "@mui/system";
 
 export default function MediaCard({ item }) {
 	const { deleteProduct, addProductToCart, checkProductInCart } = useProducts();
@@ -27,10 +31,17 @@ export default function MediaCard({ item }) {
 
 	return (
 		<>
-			<Card sx={{ borderRadius: 3 }}>
+			<Card
+				sx={{
+					borderRadius: 3,
+					width: "300px",
+					height: "450px",
+					border: "10px solid #4cd137",
+				}}
+			>
 				<div className="cardProduct">
 					<CardMedia
-						sx={{ borderRadius: 2 }}
+						sx={{ borderRadius: 2, height: "250px" }}
 						component="img"
 						height="300"
 						image={item.picture}
@@ -43,28 +54,29 @@ export default function MediaCard({ item }) {
 						<Typography variant="body2" color="text.primary">
 							{item.description}
 						</Typography>
+						<Typography variant="body2" color="text.primary">
+							{item.price}
+						</Typography>
 					</CardContent>
 				</div>
 				<CardActions>
 					{email === ADMIN ? (
 						<>
 							{" "}
-							<Button size="small" onClick={() => deleteProduct(item.id)}>
-								DELETE
+							<Button size="large" onClick={() => deleteProduct(item.id)}>
+								<DeleteIcon sx={{ color: "black" }} />
 							</Button>
-							<Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
-								EDIT
+							<Button size="large" onClick={() => navigate(`/edit/${item.id}`)}>
+								<EditIcon sx={{ color: "black" }} />
 							</Button>
 						</>
 					) : (
 						<IconButton onClick={() => addProductToCart(item)}>
-							<ShoppingCartIcon
-								color={checkProductInCart(item.id) ? "secondary" : ""}
+							<LocalMallIcon
+								color={checkProductInCart(item.id) ? "success" : ""}
 							/>
 						</IconButton>
 					)}
-
-					<span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
 				</CardActions>
 			</Card>
 		</>

@@ -79,10 +79,7 @@ const NavBar = () => {
 							component="div"
 							sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
 						>
-							<img src="../assets/logo.svg" alt="" />{" "}
-							<span>
-								<img src={logo} alt="" />
-							</span>
+							<img src={logo} alt="" />{" "}
 						</Typography>
 					</Link>
 					<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
