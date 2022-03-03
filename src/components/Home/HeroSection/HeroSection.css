@@ -19,3 +19,9 @@
 .hero-img img {
 	max-width: 550px;
 }
+
+@media screen and (max-width: 800px) {
+	.hero-section-bg-title {
+		font-size: 7rem;
+	}
+}
