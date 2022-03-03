@@ -186,7 +186,7 @@ const NavBar = () => {
 										color="secondary"
 									>
 										{" "}
-										{/* <ShoppingCartIcon /> */}
+										<ShoppingCartIcon />
 									</Badge>
 								</Button>
 							</Link>
