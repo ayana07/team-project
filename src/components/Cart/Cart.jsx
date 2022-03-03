@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -7,8 +8,10 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { useProducts } from "../../contexts/PoductContext";
+
 import { Button } from "@mui/material";
+// import { useProducts } from "../../contexts/PoductContext";
+import { useProducts } from "../../contexts/PoductContext";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
 	[`&.${tableCellClasses.head}`]: {
@@ -76,7 +79,7 @@ export default function Cart() {
 						<StyledTableCell align="right">Description</StyledTableCell>
 						<StyledTableCell align="right">Price</StyledTableCell>
 						<StyledTableCell align="right">Count</StyledTableCell>
-						<StyledTableCell align="right">Subprice</StyledTableCell>
+						<StyledTableCell align="right">SubPrice</StyledTableCell>
 						<StyledTableCell align="right">-</StyledTableCell>
 					</TableRow>
 				</TableHead>
