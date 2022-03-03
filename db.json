@@ -3,23 +3,15 @@
     {
       "name": "Nike AF 1/1",
       "description": "Men's shoes",
-      "price": null,
+      "price": "1240 $",
       "picture": "data:image/jpeg;base64,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",
       "type": "for men",
       "id": 4
     },
     {
-      "name": "NIKE SI 2/4",
-      "description": "Women's Shoes",
-      "price": null,
-      "picture": "data:image/jpeg;base64,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",
-      "type": "FOR WOMEN",
-      "id": 5
-    },
-    {
       "name": "NIKE  FR 1/7",
       "description": "Men's shoes",
-      "price": null,
+      "price": "1200 $",
       "picture": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9fb89dfa-c161-4695-b52a-2c94d32e1ee5/air-max-sc-womens-shoes-2GHRgt.png",
       "type": "for men",
       "id": 6
@@ -27,7 +19,7 @@
     {
       "name": "NIKE  FR 1/5",
       "description": "Women's Shoes",
-      "price": null,
+      "price": "570 $",
       "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/42a3ce00-f2cf-4eb1-9a9d-d6594bb4259e/air-zoom-pegasus-38-womens-road-running-shoes-gg8GBK.png",
       "type": "for women",
       "id": 7
@@ -35,7 +27,7 @@
     {
       "name": "NIKE  FR 1/9",
       "description": "Kids' shoes",
-      "price": null,
+      "price": "780 $",
       "picture": "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_3.0/w_300,c_limit/4a4d90ae-1a11-4fb3-ad29-587d41cdeb89/%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE-%D0%BD%D0%B0%D0%B4%D0%B5%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8-%D1%81%D0%BD%D0%B8%D0%BC%D0%B0%D1%82%D1%8C-dynamo-go-K0Xlz0.png",
       "type": "for kids",
       "id": 8
@@ -43,7 +35,7 @@
     {
       "name": "Nike AF 1/2",
       "description": "Kids' shoes",
-      "price": null,
+      "price": "890 $",
       "picture": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/70949372-0899-41a5-9cfe-e0ede3754b9c/flex-runner-little-kids-shoes-bsZmlp.png",
       "type": "for kids",
       "id": 9
@@ -51,10 +43,114 @@
     {
       "name": "Nike AF 5/3",
       "description": "Kids' shoes",
-      "price": null,
+      "price": "720 $",
       "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d03983f8-3e1d-48b3-8965-c1ebe344f12b/%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-air-more-uptempo-2nrQ8L.png",
       "type": "for kids",
       "id": 10
+    },
+    {
+      "name": "NIKE  KL 1/5",
+      "description": "Women's Shoes",
+      "price": "1120 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97378f26-4a55-4731-90d9-8a2f6904f2db/waffle-one-womens-shoes-qk5cz3.png",
+      "type": "for women",
+      "id": 11
+    },
+    {
+      "name": "NIKE  KL 1/7",
+      "description": "Kids' shoes",
+      "price": "650 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/91f0a2bf-10c4-4be8-968f-15a7f88d4fde/court-borough-mid-2-little-kids-shoes-c6LRCk.png",
+      "type": "for kids",
+      "id": 12
+    },
+    {
+      "name": "NIKE  KL 1/1",
+      "description": "Kids' shoes",
+      "price": "720 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4753720a-641b-4774-856f-0b3bbf1586c2/%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-air-force-1-1hqfHl.png",
+      "type": "for kids",
+      "id": 13
+    },
+    {
+      "name": "NIKE  KL 1/2",
+      "description": "Kids' shoes",
+      "price": "870 $",
+      "picture": "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_3.0/w_300,c_limit/b48e089d-be36-436c-a95b-26225d1d5b2f/air-max-90-younger-shoe-3W4GLs.png",
+      "type": "for kids",
+      "id": 14
+    },
+    {
+      "name": "NIKE  BL 1/1",
+      "description": "Men's shoes",
+      "price": "1320 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9bd58ab4-a823-407f-8f1b-9ea8a4c6c03a/air-max-270-mens-shoes-KkLcGR.png",
+      "type": "for men",
+      "id": 15
+    },
+    {
+      "name": "NIKE  BL 1/7",
+      "description": "Men's shoes",
+      "price": "1250 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d6b21f68-1ebb-418b-9903-9c6b44d0bbf1/air-presto-mens-shoes-JlLlWz.png",
+      "type": "for men",
+      "id": 16
+    },
+    {
+      "name": "NIKE  BL 1/5",
+      "description": "Men's shoes",
+      "price": "780 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/06e98d48-6995-44f3-b297-ff52031076c7/air-vapormax-2021-fk-mens-shoes-NpTfFz.png",
+      "type": "for men",
+      "id": 17
+    },
+    {
+      "name": "NIKE  BL 1/5",
+      "description": "Men's shoes",
+      "price": "1129 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dee60c30-766a-4bda-a69d-48ac9f884a98/dunk-high-retro-se-shoes-tXRLdK.png",
+      "type": "for men",
+      "id": 18
+    },
+    {
+      "name": "NIKE LK 1/1",
+      "description": "Women's Shoes",
+      "price": "980 $",
+      "picture": "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_3.0/w_300,c_limit/0bb867f0-9770-4cfe-9a9d-503932ebf51a/%D0%B1%D0%B5%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8-air-zoom-pegasus-38-RK335N.png",
+      "type": "for women",
+      "id": 19
+    },
+    {
+      "name": "NIKE LK 1/5",
+      "description": "Women's Shoes",
+      "price": "1020 $",
+      "picture": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/186e38c2-ca15-4418-8bcc-a4d4cc90d5c0/air-max-97-womens-shoes-Fr6rM4.png",
+      "type": "for women",
+      "id": 20
+    },
+    {
+      "name": "NIKE  FR 1/2",
+      "description": "Women's Shoes",
+      "price": "1130 $",
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl1vjnj2tgCnognRGsVDZ4NtoOs88xi3-Mrw&usqp=CAU",
+      "type": "for women",
+      "id": 21
+    },
+    {
+      "name": "NIKE FG 1/1",
+      "description": "Women's Shoes",
+      "price": "1029 $",
+      "picture": "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_3.0/w_300,c_limit/fbcbc8e4-57a2-4a01-a09f-edbe861dc5dc/air-force-1-sculpt-womens-shoes-GKwftK.png",
+      "type": "for women",
+      "id": 22
+    },
+    {
+      "name": "NIKE RT 1/1",
+      "description": "Women's Shoes",
+      "price": "870 $",
+      "picture": "https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_300,c_limit/60325a5b-76ae-4e66-94dd-6cee2c5f8ded/%D0%B4%D0%BB%D1%8F-%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD.jpg",
+      "type": "for women",
+      "id": 23
     }
   ]
 }

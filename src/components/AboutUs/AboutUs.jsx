@@ -44,7 +44,10 @@ const AboutUs = () => {
 			<div className="team">
 				<div>
 					<h3>SPORT TEAM</h3>
-					<p>A TEAM THAT'S IMPROWERED, DIVERSE & INCLUSIVE</p>
+					<p>
+						A TEAM THAT'S IMPROWERED,
+						<br /> DIVERSE & INCLUSIVE
+					</p>
 				</div>
 				<div className="team-board">
 					<img src={team} alt="#" />

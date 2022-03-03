@@ -1,12 +1,4 @@
-import {
-	FormControl,
-	FormControlLabel,
-	FormLabel,
-	Grid,
-	Paper,
-	Radio,
-	RadioGroup,
-} from "@mui/material";
+import { FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import React from "react";
 // import { useProducts } from "../../contexts/ProductContext";
 import { useProducts } from "../../contexts/PoductContext";

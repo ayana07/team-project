@@ -11,7 +11,7 @@ const ProductsPage = () => {
 	const { products, getProducts } = useProducts();
 	const [page, setPage] = useState(0);
 
-	const productPerPage = 8;
+	const productPerPage = 6;
 	const location = useLocation();
 
 	const pageCount = Math.ceil(products.length / productPerPage);
@@ -30,7 +30,7 @@ const ProductsPage = () => {
 		getProducts();
 	}, [location.search]);
 	return (
-		<div>
+		<div style={{ backgroundColor: "black" }}>
 			<ProductList products={paginateProducts} />
 			<ReactPaginate
 				previousLabel={<ArrowCircleLeftSharpIcon sx={{ color: "white" }} />}

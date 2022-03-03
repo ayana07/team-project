@@ -34,7 +34,6 @@ const MainRoutes = () => {
 			element: <ProductsPage />,
 			id: 4,
 		},
-		
 		{
 			link: "/cart",
 			element: <CartPage />,

@@ -1,7 +1,33 @@
 .pagination {
 	display: flex;
+	width: 80%;
 	justify-content: center;
-	list-style: none;
+	align-items: center;
+	bottom: 0;
+	height: 50px;
+	list-style-type: none;
+	margin: 0 auto;
 	background-color: black;
-	padding: 40px;
+}
+
+.pagination a {
+	padding: 10px;
+	margin: 5px;
+	text-decoration: none;
+
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+}
+
+.pagination a:hover {
+	color: #4cd137;
+}
+
+.activeBtn a {
+	background-color: #4cd137;
+}
+.pageCount {
+	background-color: white;
+	color: black;
 }

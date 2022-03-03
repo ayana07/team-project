@@ -44,8 +44,6 @@ const pages = [
 	},
 ];
 const NavBar = () => {
-	// const settings = ["Profile", "Account", "Dashboard", "Logout"];
-
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 	const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -84,25 +82,32 @@ const NavBar = () => {
 							<img src={logo} alt="" />{" "}
 						</Typography>
 					</Link>
-					<Box sx={{ flexGrow: 0 }}>
+					<Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+						<IconButton
+							size="large"
+							aria-label="account of current user"
+							aria-controls="menu-appbar"
+							aria-haspopup="true"
+							onClick={handleOpenNavMenu}
+							color="inherit"
+						>
+							<MenuIcon />
+						</IconButton>
 						<Menu
-							sx={{ mt: "45px" }}
 							id="menu-appbar"
-							anchorEl={anchorElUser}
+							anchorEl={anchorElNav}
 							anchorOrigin={{
-								vertical: "top",
-								horizontal: "right",
+								vertical: "bottom",
+								horizontal: "left",
 							}}
 							keepMounted
 							transformOrigin={{
 								vertical: "top",
-								horizontal: "right",
+								horizontal: "left",
 							}}
-							open={Boolean(anchorElUser)}
-							onClose={handleCloseUserMenu}
-							sx={{
-								display: { xs: "block", md: "none" },
-							}}
+							open={Boolean(anchorElNav)}
+							onClose={handleCloseNavMenu}
+							sx={{ display: { xs: "block", md: "none" } }}
 						>
 							{pages.map((page) => (
 								<MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -178,7 +183,7 @@ const NavBar = () => {
 										color="secondary"
 									>
 										{" "}
-										{/* <ShoppingCartIcon /> */}
+										<ShoppingCartIcon />
 									</Badge>
 								</Button>
 							</Link>
