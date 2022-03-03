@@ -27,6 +27,19 @@
 	border: 6px solid #fff;
 }
 
+.grid4:hover {
+	transform: scale(1.2);
+}
+.grid3:hover {
+	transform: scale(1.2);
+}
+.grid2:hover {
+	transform: scale(1.2);
+}
+.grid1:hover {
+	transform: scale(1.2);
+}
+
 .grid1,
 .grid2,
 .grid3,
