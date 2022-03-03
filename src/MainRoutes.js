@@ -10,6 +10,7 @@ import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
 import { ADMIN } from "./helpers/consts";
 import { useAuth } from "./contexts/AuthContexts";
+import CreditCardsPage from "./pages/CreditCardsPage";
 
 const MainRoutes = () => {
 	const { user } = useAuth();
@@ -43,6 +44,11 @@ const MainRoutes = () => {
 			link: "/contacts",
 			element: <ContactUsPage />,
 			id: 7,
+		},
+		{
+			link: "/credit",
+			element: <CreditCardsPage />,
+			id: 8,
 		},
 	];
 
