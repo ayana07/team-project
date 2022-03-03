@@ -7,11 +7,29 @@
 	padding: 10px;
 }
 
+.credit-form input {
+	background: #000;
+	border: 1px solid #4cd137;
+	outline: none;
+	padding: 10px 13px;
+	color: #4cd137;
+	border-radius: 5px;
+}
+
 #PaymentForm {
 	padding: 15px;
 	height: auto;
 }
 
-#validateButton {
-	margin: 0 auto;
+.btn-credit {
+	text-align: center;
+	margin-top: 10px;
+}
+.btn-credit button {
+	padding: 10px 13px;
+	border-radius: 5px;
+	background-color: #000;
+	outline: none;
+	border: 1px solid #4cd137;
+	color: #4cd137;
 }

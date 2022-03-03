@@ -1,0 +1,33 @@
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+	background-color: #000 !important;
+	color: rgba(0, 0, 0, 0.87);
+	-webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	border-radius: 4px;
+	box-shadow: none !important;
+	width: 80% !important;
+	margin: 0 auto !important;
+	padding: 10px !important;
+	overflow-x: auto;
+}
+
+.css-1pclhgl-MuiTable-root {
+	background-color: #fff !important;
+}
+
+.css-1q1u3t4-MuiTableRow-root th {
+	color: #4cd137 !important;
+}
+
+.buybtn {
+	border: 1px solid #4cd137 !important;
+	color: #4cd137 !important;
+	border-radius: 5px !important;
+	margin-top: 10px !important;
+}
+
+.buybtn:hover {
+	border: 1px solid #fff !important;
+	color: #fff !important;
+	cursor: pointer;
+}

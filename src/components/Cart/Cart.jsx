@@ -12,6 +12,7 @@ import Paper from "@mui/material/Paper";
 import { Button } from "@mui/material";
 import { useProducts } from "../../contexts/PoductContext";
 import { Link } from "react-router-dom";
+import "./Cart.css";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
 	[`&.${tableCellClasses.head}`]: {
@@ -80,7 +81,7 @@ export default function Cart() {
 						<StyledTableCell align="right">Price</StyledTableCell>
 						<StyledTableCell align="right">Count</StyledTableCell>
 						<StyledTableCell align="right">SubPrice</StyledTableCell>
-						<StyledTableCell align="right">-</StyledTableCell>
+						<StyledTableCell align="right"></StyledTableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -122,7 +123,9 @@ export default function Cart() {
 			</Table>
 
 			<Link to="/credit">
-				<Button onClick={cartCleaner}>BUY NOW FOR {cart.totalPrice}$</Button>
+				<Button onClick={cartCleaner} className="buybtn">
+					BUY NOW FOR {cart.totalPrice}$
+				</Button>
 			</Link>
 		</TableContainer>
 	);
