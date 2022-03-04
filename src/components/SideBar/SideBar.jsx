@@ -1,6 +1,5 @@
 import { FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import React from "react";
-// import { useProducts } from "../../contexts/ProductContext";
 import { useProducts } from "../../contexts/PoductContext";
 import "./SideBar.css";
 

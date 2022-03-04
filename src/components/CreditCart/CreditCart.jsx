@@ -1,7 +1,6 @@
-import { Alert } from "@mui/material";
 import React from "react";
 import Cards from "react-credit-cards";
-
+import { Link } from "react-router-dom";
 import "react-credit-cards/es/styles-compiled.css";
 import useForm from "../../useForm";
 import "./CreditCart.css";
@@ -67,15 +66,17 @@ const CreditCart = () => {
 					/>
 				</form>
 				<div className="btn-credit">
-					<button
-						size={"block"}
-						data-testid="validateButton"
-						id="validateButton"
-						type="submit"
-					>
-						{" "}
-						Validate
-					</button>
+					<Link to="/products">
+						<button
+							size={"block"}
+							data-testid="validateButton"
+							id="validateButton"
+							type="submit"
+						>
+							{" "}
+							Validate
+						</button>
+					</Link>
 				</div>
 			</div>
 		</>

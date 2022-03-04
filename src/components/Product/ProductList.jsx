@@ -49,7 +49,9 @@ const ProductList = ({ products }) => {
 					onChange={(e) => setSearch(e.target.value)}
 				/>
 			</div>
-			<div style={{ display: "flex", backgroundColor: "#000" }}>
+			<div
+				style={{ display: "flex", flexWrap: "wrap", backgroundColor: "#000" }}
+			>
 				<div className="side-bar">
 					<SideBar />
 				</div>
