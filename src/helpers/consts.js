@@ -6,4 +6,6 @@ export const ACTIONS = {
 	CHANGE_CART_LENGTH: "CHANGE_CART_LENGTH",
 };
 
-export const JSON_API_PRODUCTS = "  http://localhost:8000/sneakers";
+export const JSON_API_PRODUCTS = "https://nike-air.herokuapp.com/api/sneakers";
+
+// http://localhost:8000/sneakers"
