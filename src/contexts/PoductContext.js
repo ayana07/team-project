@@ -67,6 +67,7 @@ const ProductContextProvider = ({ children }) => {
 			payload: data,
 		});
 	};
+	
 
 	const saveEditedProduct = async (newProduct) => {
 		await axios.patch(`${JSON_API_PRODUCTS}/${newProduct.id}`, newProduct);

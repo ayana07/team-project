@@ -7,6 +7,7 @@ const EditProduct = () => {
 	const { id } = useParams();
 
 	const navigate = useNavigate();
+
 	const { getProductDetails, productDetails, saveEditedProduct } =
 		useProducts();
 

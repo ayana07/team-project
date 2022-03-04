@@ -10,7 +10,7 @@ const SectionTwo = () => {
 	return (
 		<div className="popular-product">
 			<Container fixed>
-				<h3 className="popular">Popular product</h3>
+				<h3 className="popular">POPULAR PRODUCTS</h3>
 				<div id="grid-cont" style={{ marginTop: "15px" }}>
 					<div className="grid1">
 						<img style={{ width: "100%" }} src={air} alt="" />
@@ -24,7 +24,7 @@ const SectionTwo = () => {
 						<img style={{ width: "100%" }} src={blazer} alt="" />
 						<p>Nike Blazer</p>
 					</div>
-					<div className="grid4">
+					<div className="grid">
 						<img style={{ width: "100%" }} src={zoom} alt="" />
 						<p>Air Zoom</p>
 					</div>

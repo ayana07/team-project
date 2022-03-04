@@ -7,9 +7,9 @@ import "./SectionThree.css";
 
 const SectionThree = () => {
 	return (
-		<div style={{ padding: "50px", height: "auto" }}>
+		<div style={{ padding: "50px", height: "auto", marginTop: "50px" }}>
 			<Container fixed>
-				<h3 className="about-title">About Us</h3>
+				<h3 className="about-title">ABOUT US</h3>
 				<div id="grid-container" style={{ marginTop: "15px" }}>
 					<div className="item1"></div>
 					<div className="item2"></div>
